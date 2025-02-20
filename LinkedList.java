@@ -89,6 +89,33 @@ public class LinkedList {
         }
         return curr;
     }
+    public static LLNode rotateListLeft(LLNode head,int k){
+        if (head==null || head.next == null){
+            return head;
+        }
+        LLNode curr = head;
+        LLNode tail = head;
+        LLNode tailPrev = head;
+        int len = 1;
+        while (tail.next!=null){
+            tailPrev = tail;
+            tail = tail.next;
+            len++;
+        }
+        int i = 0;
+        while (i<(k%len)){
+            tail.next = curr;
+            curr = tail;
+            tailPrev.next = null;
+
+            while (tail.next!=null){
+                tailPrev = tail;
+                tail = tail.next;
+            }
+            i++;
+        }
+        return curr;
+    }
     public static void nThNodeFromEndOfLL(LLNode head,int n){
         LLNode temp = head;
         int len = 0;
@@ -384,12 +411,13 @@ public class LinkedList {
     public static void main(String[] args) {
         insert(1);
         insert(3);
-        insert(2);
+        insert(5);
         insert(3);
-        insert(1);
+        insert(4);
+        display(rotateListLeft(head,3));
 
-        display(head);
-        System.out.println(checkListIsPalindrome(head));
+//        display(head);
+//        System.out.println(checkListIsPalindrome(head));
 //        LOOP DETECTION HARD CODED TO CREATE LOOP
 
 //        LLNode head = new LLNode(1);
