@@ -3,7 +3,7 @@ package DSA.Tress;
 import java.util.Scanner;
 
 public class BinaryTree {
-    private static class Node{
+    public static class Node{
         int value;
         Node left;
         Node right;
