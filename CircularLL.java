@@ -1,3 +1,5 @@
+package DSA;
+
 class CLLNode{
     int data;
     CLLNode next;

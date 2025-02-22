@@ -1,3 +1,5 @@
+package DSA;
+
 class StackNode{
     int data;
     StackNode next;

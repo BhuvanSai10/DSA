@@ -1,3 +1,5 @@
+package DSA;
+
 class QueueNode{
     int data;
     QueueNode next;

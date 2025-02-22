@@ -1,4 +1,4 @@
-package ProblemsOnStack;
+package DSA.ProblemsOnStack;
 
 import java.util.Stack;
 
