@@ -42,3 +42,5 @@ public class FirstOccurrenceOfElementInSortedArray {
             System.out.println(target + " not found in the array.");
 
         }
+    }
+}
