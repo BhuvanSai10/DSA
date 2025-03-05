@@ -1,4 +1,4 @@
-package DSA;
+package DSA.Stack;
 
 class StackNode{
     int data;

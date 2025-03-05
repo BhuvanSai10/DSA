@@ -1,4 +1,4 @@
-package DSA;
+package DSA.LinkedList;
 
 class CLLNode{
     int data;

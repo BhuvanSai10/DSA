@@ -1,4 +1,4 @@
-package DSA;
+package DSA.Queue;
 
 class QueueNode{
     int data;
