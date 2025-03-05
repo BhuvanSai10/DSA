@@ -1,4 +1,4 @@
-package DSA.ProblemsOnStack;
+package DSA.Stack.ProblemsOnStack;
 
 import java.util.ArrayList;
 import java.util.Arrays;

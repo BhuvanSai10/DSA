@@ -1,4 +1,4 @@
-package DSA.ProblemsOnStack;
+package DSA.Stack.ProblemsOnStack;
 
 import java.util.Stack;
 //Algorithm for Postfix to Prefix:
