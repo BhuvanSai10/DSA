@@ -9,7 +9,7 @@ public class MaxLenOfSubArrayWhereSumLessThanK {
 
         while (r < arr.length) {
             sum += arr[r];
-            while (sum > k) {
+            while (sum >= k) {
                 sum -= arr[l];
                 l++;
             }
