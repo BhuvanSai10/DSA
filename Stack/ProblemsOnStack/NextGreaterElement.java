@@ -63,7 +63,7 @@ public class NextGreaterElement {
         return result;
     }
     public static void main(String[] args) {
-        int[] arr = {50,40,30,10};
+        int[] arr = {30,50,40,-10,30,60};
         System.out.println(Arrays.toString(findNextGreaterElements(arr)));
     }
 }
