@@ -8,13 +8,20 @@ public class PrintAllWordsInASentence {
         int x=0;
         int y=0;
         char[] chars = sen.toCharArray();
-        List<List<String>> words = new ArrayList<>();
-        List<String> word = new ArrayList<>();
+
+        List<String> words = new ArrayList<>();
+        StringBuilder word = new StringBuilder();
+
         for (char ch : chars){
             if (ch!=' '){
-                word.add(ch);
+                word.append(ch);
+            }
+            else{
+                words.add(word.toString());
+                word = new StringBuilder();
             }
         }
+        System.out.println(words);
     }
 
     public static void main(String[] args) {
