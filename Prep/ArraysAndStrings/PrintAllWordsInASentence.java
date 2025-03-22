@@ -9,6 +9,7 @@ public class PrintAllWordsInASentence {
         int y=0;
         char[] chars = sen.toCharArray();
         List<List<String>> words = new ArrayList<>();
+        List<String> word = new ArrayList<>();
         for (char ch : chars){
 
         }
