@@ -11,7 +11,9 @@ public class PrintAllWordsInASentence {
         List<List<String>> words = new ArrayList<>();
         List<String> word = new ArrayList<>();
         for (char ch : chars){
-
+            if (ch!=' '){
+                word.add(ch);
+            }
         }
     }
 
