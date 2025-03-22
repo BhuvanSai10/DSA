@@ -1,8 +1,5 @@
 package DSA.Prep.ArraysAndStrings;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class PrintAllWordsInASentence {
     public static void printAllWords(String sen){
         String[] words = sen.split(" ");
