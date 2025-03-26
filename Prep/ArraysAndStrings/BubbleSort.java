@@ -17,7 +17,7 @@ public class BubbleSort {
     public static void main(String args[])
     {
         BubbleSort ob = new BubbleSort();
-        int[] a = { 64, 34, 25, 12 ,78};
+        int[] a = { 64, 34, 25, 12 ,78,89};
 
         ob.bubbleSort(a);
 
