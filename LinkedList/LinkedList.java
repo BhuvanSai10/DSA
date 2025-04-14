@@ -428,6 +428,7 @@ public class LinkedList {
         return dummyNode.next;
     }
 
+
     public static void main(String[] args) {
         //For sumList
 //        LLNode head1 = new LLNode(3);
