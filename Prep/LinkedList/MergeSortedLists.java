@@ -4,7 +4,7 @@ public class MergeSortedLists {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode(0), curr = dummy;
         while (l1 != null && l2 != null) {
-            if (l1.val < l2.val) {
+            if (l1.data < l2.data) {
                 curr.next = l1;
                 l1 = l1.next;
             } else {

@@ -2,15 +2,7 @@ package DSA.LinkedList;
 
 import java.util.HashSet;
 import java.util.Stack;
-class LLNode{
-    int data;
-    LLNode next;
-    LLNode(int data){
-        this.data  = data;
-        this.next = null;
-    }
 
-}
 public class LinkedList {
     public static LLNode head;
     public static void insert(int data){
@@ -410,13 +402,59 @@ public class LinkedList {
         System.out.println("null");
     }
 
+    public static LLNode sumList(LLNode head1, LLNode head2){
+        int carry = 0;
+        LLNode dummyNode = new LLNode(-1);
+        LLNode temp = dummyNode;
+
+        while (head1!=null || head2!=null){
+            int sum = carry;
+            if (head1!=null){
+                sum = sum + head1.data;
+                head1 = head1.next;
+            }
+            if (head2!=null){
+                sum = sum + head2.data;
+                head2 = head2.next;
+            }
+            temp.next = new LLNode(sum%10);
+            carry = sum/10;
+
+            temp = temp.next;
+        }
+        if (carry!=0){
+            temp.next = new LLNode(carry);
+        }
+        return dummyNode.next;
+    }
+
     public static void main(String[] args) {
-        insert(1);
-        insert(3);
-        insert(5);
-        insert(3);
-        insert(4);
-        display(rotateListLeft(head,3));
+        //For sumList
+//        LLNode head1 = new LLNode(3);
+//        head1.next = new LLNode(9);
+//        head1.next.next = new LLNode(8);
+//        System.out.print("List 1: ");
+//        display(head1);
+//
+//        LLNode head2 = new LLNode(7);
+//        head2.next = new LLNode(0);
+//        head2.next.next = new LLNode(2);
+//        System.out.print("List 2: ");
+//        display(head2);
+//
+//        LLNode result = sumList(head1, head2);
+//        System.out.print("Sum List: ");
+//        display(reverseList(result));
+//        insert(1);
+//        insert(3);
+//        insert(5);
+//        insert(3);
+//        insert(4);
+//
+
+
+
+//        display(rotateListLeft(head,3));
 
 //        display(head);
 //        System.out.println(checkListIsPalindrome(head));

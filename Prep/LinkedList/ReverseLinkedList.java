@@ -1,9 +1,4 @@
 package DSA.Prep.LinkedList;
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode(int val) { this.val = val; }
-}
 
 public class ReverseLinkedList {
     public ListNode reverseList(ListNode head) {
