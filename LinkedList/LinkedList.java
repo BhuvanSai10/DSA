@@ -428,8 +428,40 @@ public class LinkedList {
         return dummyNode.next;
     }
 
+    public static LLNode segregateEvenAndOddNodes(LLNode head){
+        if (head==null || head.next==null ){
+            return head;
+        }
+
+        LLNode odd = head;
+        LLNode evenHead = head.next, even = head.next;
+
+        while (even!=null && even.next!=null){
+            odd.next = odd.next.next;
+            even.next = even.next.next;
+
+            odd = odd.next;
+            even = even.next;
+
+        }
+        odd.next = evenHead;
+        return head;
+
+    }
+
 
     public static void main(String[] args) {
+        //segregateEvenAndOddNodes
+//        insert(1);
+//        insert(2);
+//        insert(3);
+//        insert(4);
+//        insert(5);
+//        insert(6);
+//        display(head);
+//        display(segregateEvenAndOddNodes(head));
+
+
         //For sumList
 //        LLNode head1 = new LLNode(3);
 //        head1.next = new LLNode(9);
