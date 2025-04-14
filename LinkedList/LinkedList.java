@@ -449,8 +449,49 @@ public class LinkedList {
 
     }
 
+    public static LLNode sort012s(LLNode head){
+        LLNode zerosHead = new LLNode(-1);
+        LLNode onesHead = new LLNode(-1);
+        LLNode twosHead = new LLNode(-1);
+
+        LLNode zeros = zerosHead;
+        LLNode ones = onesHead;
+        LLNode twos = twosHead;
+
+        while (head!=null){
+            if (head.data==0){
+                zeros.next = head;
+                zeros = zeros.next;
+            }else if (head.data == 1){
+                ones.next = head;
+                ones = ones.next;
+            }else{
+                twos.next = head;
+                twos = twos.next;
+            }
+            head = head.next;
+        }
+
+        twos.next = null;
+        ones.next = twosHead.next;
+        zeros.next = onesHead.next;
+
+
+        return zerosHead.next;
+    }
+
 
     public static void main(String[] args) {
+        //sort012s
+//        insert(0);
+//        insert(2);
+//        insert(2);
+//        insert(1);
+//        insert(1);
+//        insert(0);
+//        insert(2);
+//        display(sort012s(head));
+
         //segregateEvenAndOddNodes
 //        insert(1);
 //        insert(2);
