@@ -502,6 +502,7 @@ public class LinkedList {
 
 
     public static void main(String[] args) {
+
 //        isPalindromeList
 //        insert(1);
 //        insert(2);
