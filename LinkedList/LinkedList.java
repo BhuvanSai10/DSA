@@ -479,9 +479,38 @@ public class LinkedList {
 
         return zerosHead.next;
     }
+    public static boolean isPalindromeList(LLNode head){
+        if (head==null|| head.next ==null){
+            return true;
+        }
+        LLNode fast = head,slow = head;
+        while (fast!=null && fast.next!=null){
+            fast = fast.next.next;
+            slow = slow.next;
+        }
+        LLNode revListHead = reverseList(slow.next);
+        LLNode temp = head;
+        while(temp!=null && revListHead!=null){
+            if (temp.data!=revListHead.data){
+                return false;
+            }
+            temp = temp.next;
+            revListHead = revListHead.next;
+        }
+        return true;
+    }
 
 
     public static void main(String[] args) {
+//        isPalindromeList
+//        insert(1);
+//        insert(2);
+//        insert(3);
+//        insert(3);
+//        insert(2);
+//        insert(1);
+//        System.out.println(isPalindromeList(head));
+
         //sort012s
 //        insert(0);
 //        insert(2);
