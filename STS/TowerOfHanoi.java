@@ -43,7 +43,7 @@ public class TowerOfHanoi {
     }
 
     public static void main(String[] args) {
-        int numberOfDisks = 3;
+        int numberOfDisks = 2;
         iterativeHanoi(numberOfDisks, 'S', 'A', 'D');
     }
 }
