@@ -40,8 +40,7 @@ public class SortBiotonicDLL {
 
         // Process DLLNodes until all are added to the
         // result list
-        while (front != null && last != null && front != last
-                && last.next != front) {
+        while (front != null && last != null && front != last && last.next != front) {
             DLLNode newDLLNode;
 
             // Compare the value of the front and last DLLNodes
