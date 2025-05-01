@@ -19,8 +19,7 @@ public class VerticalOrderTraversal {
 
     // Helper function to perform DFS and
     // store nodes at different horizontal distances
-    static void DFS(TreeNode root, int hd, int[] mn,
-                    HashMap<Integer, ArrayList<Integer>> mp) {
+    static void DFS(TreeNode root, int hd, int[] mn, HashMap<Integer, ArrayList<Integer>> mp) {
         if (root == null)
             return;
 
