@@ -1,6 +1,6 @@
 package DSA.Ultimate;
 
-public class ValidPalindrome {
+public class ValidPalindrome3 {
     public static boolean validPalindrome(String s){
         String cleaned = s.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
 
