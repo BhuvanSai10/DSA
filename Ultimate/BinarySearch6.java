@@ -7,14 +7,14 @@ public class BinarySearch6 {
         Arrays.sort(arr);
         int left = 0,right = arr.length-1;
 
-        while(left<right){
+        while(left<=right){
             int mid = left + (right - left) / 2;
             if (arr[mid]==key){
                 return mid;
             } else if (arr[mid]<key) {
-                left = mid;
+                left = mid+1;
             }else{
-                right = mid;
+                right = mid-1;
             }
         }
         return -1;
