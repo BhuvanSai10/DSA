@@ -2,7 +2,7 @@ package DSA.Ultimate;
 
 import DSA.STS.Node;
 
-public class ReverseLinkedList {
+public class ReverseLinkedList7 {
     public Node reverseList(Node head){
         if (head == null || head.next == null){
             return head;

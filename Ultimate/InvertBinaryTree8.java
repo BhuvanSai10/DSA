@@ -2,7 +2,7 @@ package DSA.Ultimate;
 
 import DSA.Prep.Tress.TreeNode;
 
-public class InvertBinaryTree {
+public class InvertBinaryTree8 {
     public TreeNode invertTree(TreeNode root) {
         if(root == null){
             return null;
