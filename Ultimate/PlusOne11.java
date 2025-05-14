@@ -2,7 +2,7 @@ package DSA.Ultimate;
 
 import java.util.Arrays;
 
-public class PlusOne10 {
+public class PlusOne11 {
     public static int[] plusOne(int[] digits) {
         for (int i = digits.length - 1; i >= 0; i--) {
             if (digits[i] < 9) {
