@@ -2,11 +2,11 @@ package DSA.Prep.LinkedList;
 
 public class ListNode {
 
-    int data;
-    ListNode next;
+    public int data;
+    public ListNode next;
     ListNode head;
 
-    ListNode(int data) {
+    public ListNode(int data) {
         this.data = data;
         this.next = null;
     }
