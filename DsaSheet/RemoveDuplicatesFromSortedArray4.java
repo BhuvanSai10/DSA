@@ -2,7 +2,7 @@ package DSA.DsaSheet;
 
 import java.util.Arrays;
 
-public class RemoveDuplicatesFromSortedArray {
+public class RemoveDuplicatesFromSortedArray4 {
     public static void removeDuplicates(int[] arr){
         int idx = 0;
         for (int i = 1 ; i<arr.length ; i++){

@@ -1,6 +1,6 @@
 package DSA.DsaSheet;
 
-public class CheckIfArrayIsSorted {
+public class CheckIfArrayIsSorted3 {
     public static boolean isSorted(int[] nums){
         for (int i = 1 ; i< nums.length ; i++){
             if (!(nums[i-1]<= nums[i])){
